@@ -13,7 +13,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function App() {
   const [selectedFilter, setSelectedFilter] = useState("Tudo");
 
-  // Página principal depois do login
   return (
     <div className="h-screen bg-[#bfbfbf] text-black flex flex-col">
       <TopBar />

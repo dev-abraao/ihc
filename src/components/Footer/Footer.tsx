@@ -15,7 +15,6 @@ export default function Footer() {
   return (
     <div className="bg-[#d9d9d9] border-t border-[#bfbfbf] p-4">
       <div className="flex items-center justify-between">
-        {/* Current Track */}
         <div className="flex items-center gap-3 w-1/4">
           <img src="pablohoney.png" alt="Creep" className="w-14 h-14 rounded" />
           <div>
@@ -24,7 +23,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Player Controls */}
         <div className="flex flex-col items-center gap-2 w-1/2">
           <div className="flex items-center gap-4">
             <Button
@@ -71,7 +69,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Volume and Options */}
         <div className="flex items-center gap-2 w-1/4 justify-end">
           <Button
             variant="ghost"

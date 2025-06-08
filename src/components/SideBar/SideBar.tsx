@@ -9,7 +9,56 @@ export default function SideBar() {
     <div className="w-80 bg-[#d9d9d9] p-4 flex flex-col">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <div className="w-6 h-6 bg-[#666] rounded"></div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-[#666]"
+          >
+            <rect
+              x="2"
+              y="18"
+              width="18"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            />
+            <rect
+              x="3"
+              y="15"
+              width="16"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            />
+            <rect
+              x="4"
+              y="12"
+              width="14"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            />
+            <rect
+              x="5"
+              y="9"
+              width="12"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            />
+            <rect
+              x="6"
+              y="6"
+              width="10"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            />
+            <rect x="7" y="3" width="8" height="2" rx="1" fill="currentColor" />
+          </svg>
           <span className="font-semibold text-black">Sua Biblioteca</span>
         </div>
         <div className="flex gap-2">

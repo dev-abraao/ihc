@@ -1,31 +1,14 @@
 "use client";
 
 import type React from "react";
-
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useRouter } from "next/navigation";
 
 export default function RegisterPage() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const router = useRouter();
-
-  const handleRegister = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Registration logic would go here
-    console.log("Registration attempted with:", { name, email, password });
-  };
-
   return (
     <div className="min-h-screen bg-[#bfbfbf] flex flex-col">
-      {/* Header */}
       <header className="bg-[#d9d9d9] px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          {/* Logo */}
           <svg
             width="32"
             height="32"
@@ -56,10 +39,8 @@ export default function RegisterPage() {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="flex-1 flex items-center justify-center px-6 py-12">
         <div className="w-full max-w-6xl grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Hero */}
           <div className="flex flex-col items-center text-center space-y-8">
             <div className="space-y-2">
               <h1 className="text-4xl lg:text-5xl font-bold text-black leading-tight">
@@ -75,7 +56,6 @@ export default function RegisterPage() {
             </div>
           </div>
 
-          {/* Right Side - Register Form */}
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-md bg-[#f5f5f5] rounded-2xl p-8 shadow-xl">
               <div className="text-center mb-6">
@@ -85,7 +65,7 @@ export default function RegisterPage() {
                 <p className="text-sm text-[#666] mt-1">
                   Already have an account?{" "}
                   <a
-                    href="/login"
+                    href="/"
                     className="text-[#1ed760] hover:underline font-medium"
                   >
                     Log in here
@@ -93,7 +73,7 @@ export default function RegisterPage() {
                 </p>
               </div>
 
-              <form onSubmit={handleRegister} className="space-y-4">
+              <form className="space-y-4">
                 <div className="space-y-2">
                   <label
                     htmlFor="name"
@@ -106,8 +86,6 @@ export default function RegisterPage() {
                     type="text"
                     placeholder="Enter your full name"
                     className="h-12 border-[#bfbfbf] focus:border-[#1ed760] focus:ring-[#1ed760] bg-white text-black"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
 
@@ -123,8 +101,6 @@ export default function RegisterPage() {
                     type="email"
                     placeholder="you@email.com"
                     className="h-12 border-[#bfbfbf] focus:border-[#1ed760] focus:ring-[#1ed760] bg-white text-black"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
 
@@ -140,8 +116,6 @@ export default function RegisterPage() {
                     type="password"
                     placeholder="Create a password"
                     className="h-12 border-[#bfbfbf] focus:border-[#1ed760] focus:ring-[#1ed760] bg-white text-black"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
 
@@ -157,8 +131,6 @@ export default function RegisterPage() {
                     type="password"
                     placeholder="Confirm your password"
                     className="h-12 border-[#bfbfbf] focus:border-[#1ed760] focus:ring-[#1ed760] bg-white text-black"
-                    value={confirmPassword}
-                    onChange={(e) => setConfirmPassword(e.target.value)}
                   />
                 </div>
 
@@ -214,7 +186,6 @@ export default function RegisterPage() {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="bg-[#d9d9d9] px-6 py-4 text-center border-t border-[#bfbfbf]">
         <div className="flex items-center justify-center gap-2 text-black text-sm">
           <span className="font-medium">Lightify</span>
