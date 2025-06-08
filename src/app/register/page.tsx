@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 
 export default function RegisterPage() {
   return (
-    <div className="min-h-screen bg-[#bfbfbf] flex flex-col">
+    <div className="min-h-screen bg-[#ffffff] flex flex-col">
       <header className="bg-[#d9d9d9] px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <svg
