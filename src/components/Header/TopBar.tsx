@@ -32,7 +32,7 @@ export default function TopBar() {
       </div>
 
       <div className="flex items-center gap-4 flex-1 max-w-md mx-8">
-        <Link href={"/"}>
+        <Link href={"/home"}>
           <Button
             variant="ghost"
             size="icon"
