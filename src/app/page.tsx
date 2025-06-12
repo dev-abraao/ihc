@@ -77,7 +77,7 @@ export default function LoginPage() {
               Log in to Lightify
             </h3>
             <p className="text-sm text-[#666] mt-1">
-              Don't have an account? <br/>
+              Don&apos;t have an account? <br/>
               <Link
                 href="/register"
                 className="text-[#1ed760] hover:underline font-medium"
