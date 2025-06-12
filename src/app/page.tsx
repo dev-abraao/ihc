@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -76,13 +77,13 @@ export default function LoginPage() {
               Log in to Lightify
             </h3>
             <p className="text-sm text-[#666] mt-1">
-              Don't have an account?{" "}
-              <a
+              Don't have an account? <br/>
+              <Link
                 href="/register"
                 className="text-[#1ed760] hover:underline font-medium"
               >
                 Sign up here
-              </a>
+              </Link>
             </p>
           </div>
 

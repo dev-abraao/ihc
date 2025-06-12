@@ -3,6 +3,7 @@
 import type React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 
 export default function RegisterPage() {
   return (
@@ -63,13 +64,13 @@ export default function RegisterPage() {
                   Sign up for free
                 </h3>
                 <p className="text-sm text-[#666] mt-1">
-                  Already have an account?{" "}
-                  <a
+                  Already have an account?<br/>
+                  <Link
                     href="/"
                     className="text-[#1ed760] hover:underline font-medium"
                   >
                     Log in here
-                  </a>
+                  </Link>
                 </p>
               </div>
 
