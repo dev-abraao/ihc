@@ -29,10 +29,10 @@ export default function TopBar() {
                 strokeLinejoin="round"
               />
             </svg>
-            <span className="text-xl font-bold text-black">Lightify</span>
+            <span className="text-xl font-bold text-black hidden sm:block">Lightify</span>
           </div>
         </div>
-        <div className="flex items-center gap-2 ml-4">
+        <div className="items-center gap-2 ml-4 hidden sm:flex">
           <Button
             variant="ghost"
             size="icon"
