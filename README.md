@@ -2,6 +2,10 @@
 
 O Lightify é uma reimaginação dos aplicativo de streaming de músicas, com um visual temático de alta-luminosidade e interface amigável para navegação, customização do perfil do usuário, possibilitando ao usuário destacar músicas e álbums mais ouvidos e recomendações personalizadas para uma melhor experiência final. (Projeto apresenta somente Front-end para demonstração)
 
+## Link
+
+https://ihc-lake.vercel.app/
+
 ## Tecnologias usadas
 
 - Next.js
